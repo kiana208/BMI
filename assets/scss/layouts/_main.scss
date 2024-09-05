@@ -1,0 +1,32 @@
+.calculator{
+    width: 100%;
+
+    .title{
+        color: rgb(255, 255, 255);
+    }
+    form{
+       .lable-input{
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: none;
+            border-radius: 8px;
+            &:focus{
+                box-shadow: 0 0 8px rgb(82, 139, 208);
+            }
+            &::-webkit-inner-spin-button{
+                -webkit-appearance: none;
+            }
+        }
+        .lable{
+            color: aliceblue;
+        }
+  
+    }  
+    h3 {
+        color: rgb(55, 85, 112);
+            span{
+                color: #e74b4b;
+            } 
+    }
+}

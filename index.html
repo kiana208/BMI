@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/plugin/bootsrap-5.3.3/css/bootsrap.min.css" />
+    <link rel="stylesheet" href="./assets/scss/master.min.css" />
+    <link rel="icon" type="image/x-icon" href="./public/icons/health-food.png" />
+    <title>Calculate BMI</title>
+  </head>
+  <body>
+    <div class="container-fluid main d-flex flex-column align-items-center justify-content-center">
+      <div class="calculator rounded-pill d-flex flex-column align-items-center justify-content-center">
+        <h2 class="text-center title">BMI Calculator</h2>
+        <form class="d-flex align-items-center flex-column gap-3">
+          <input class="lable-input" type="number" id="weight" placeholder="Enter your weight(kg):" required />
+          <input class="lable-input" type="number" id="height" placeholder="Enter your height(cm):" required />
+          <label for="gender" class="lable">Gender:</label>
+          <select class="form-select" id="gender">
+            <option value="" disabled selected>Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+          <div class="btn-group d-flex gap-3 mb-5">
+            <button class="btn rounded-pill" type="button" onclick="calculateBMI()"> Calculate BMI </button>
+            <button class="btn rounded-pill" type="button" onclick="reload()"> Clear </button>
+          </div>
+        </form>
+        <h3><span id="result"></span>
+        </h3>
+        <h3><span id="interpretation"></span>
+        </h3>
+      </div>
+    </div>
+    <script src="./assets/plugin/bootsrap-5.3.3/js/bootstrap.boundle.js"></script>
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
